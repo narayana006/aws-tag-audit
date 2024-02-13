@@ -1,0 +1,23 @@
+# Illustrative tagging policy for the fictional account 123456789012.
+owner_key: Owner
+
+tags:
+  Owner:
+    pattern: '^[a-z0-9.-]+@example\.com$'
+  Environment:
+    allowed: [prod, staging, dev]
+  CostCenter:
+    pattern: '^CC-[0-9]{4}$'
+
+resource_types:
+  # Buckets must also say how sensitive their data is.
+  s3:
+    tags:
+      DataClassification:
+        allowed: [public, internal, confidential]
+  # Snapshots inherit cost allocation from their volume; don't require CostCenter.
+  ec2:snapshot:
+    skip: [CostCenter]
+  # Log groups are managed by the platform team's own tooling.
+  logs:log-group:
+    ignore: true

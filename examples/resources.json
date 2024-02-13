@@ -1,0 +1,71 @@
+{
+  "ResourceTagMappingList": [
+    {
+      "ResourceARN": "arn:aws:ec2:us-east-1:123456789012:instance/i-0a1b2c3d4e5f60001",
+      "Tags": [
+        {"Key": "Owner", "Value": "payments-team@example.com"},
+        {"Key": "Environment", "Value": "prod"},
+        {"Key": "CostCenter", "Value": "CC-1042"},
+        {"Key": "Name", "Value": "payments-api-1"}
+      ]
+    },
+    {
+      "ResourceARN": "arn:aws:ec2:us-east-1:123456789012:instance/i-0a1b2c3d4e5f60002",
+      "Tags": [
+        {"Key": "Owner", "Value": "payments-team@example.com"},
+        {"Key": "Environment", "Value": "production"},
+        {"Key": "Name", "Value": "payments-worker-1"}
+      ]
+    },
+    {
+      "ResourceARN": "arn:aws:ec2:us-east-1:123456789012:volume/vol-0f1e2d3c4b5a60003",
+      "Tags": [
+        {"Key": "owner", "Value": "data-eng@example.com"},
+        {"Key": "Environment", "Value": "dev"},
+        {"Key": "CostCenter", "Value": "CC-2210"}
+      ]
+    },
+    {
+      "ResourceARN": "arn:aws:ec2:us-east-1:123456789012:snapshot/snap-0aa11bb22cc330004",
+      "Tags": [
+        {"Key": "Owner", "Value": "data-eng@example.com"},
+        {"Key": "Environment", "Value": "dev"}
+      ]
+    },
+    {
+      "ResourceARN": "arn:aws:s3:::acme-invoices-123456789012",
+      "Tags": [
+        {"Key": "Owner", "Value": "payments-team@example.com"},
+        {"Key": "Environment", "Value": "prod"},
+        {"Key": "CostCenter", "Value": "CC-1042"}
+      ]
+    },
+    {
+      "ResourceARN": "arn:aws:s3:::acme-public-assets",
+      "Tags": [
+        {"Key": "Owner", "Value": "web@example.com"},
+        {"Key": "Environment", "Value": "prod"},
+        {"Key": "CostCenter", "Value": "CC-3001"},
+        {"Key": "DataClassification", "Value": "public"}
+      ]
+    },
+    {
+      "ResourceARN": "arn:aws:lambda:eu-west-1:210987654321:function:thumbnailer",
+      "Tags": [
+        {"Key": "Owner", "Value": ""},
+        {"Key": "Environment", "Value": "staging"},
+        {"Key": "CostCenter", "Value": "1234"}
+      ]
+    },
+    {
+      "ResourceARN": "arn:aws:rds:eu-west-1:210987654321:db:orders-replica",
+      "Tags": [
+        {"Key": "aws:cloudformation:stack-name", "Value": "orders"}
+      ]
+    },
+    {
+      "ResourceARN": "arn:aws:logs:us-east-1:123456789012:log-group:/aws/lambda/thumbnailer",
+      "Tags": []
+    }
+  ]
+}
